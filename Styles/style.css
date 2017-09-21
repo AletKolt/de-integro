@@ -1,0 +1,56 @@
+/*ELEMENTS*/
+body{
+    background-image: url('../Images/bg_image.jpg');
+    background-color: black;
+    height: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(99, 51, 43);
+}
+
+
+/*CLASSES*/
+
+
+/*IDs*/
+#homeWrapper{
+    margin-top: 200px;
+    background-image: url('../Images/whiteBG.png');
+}
+
+#company-statement{
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+#company-name-H1{
+    font-size: 82px;
+    font-weight: 500;
+}
+
+#what-we-do-anchor{
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: rgb(153, 78, 65);
+    color: white;
+    text-decoration: none;
+    transition: 1s;
+    font-size: 28px;
+    border-radius: 3px;
+}
+
+#what-we-do-anchor:hover{
+    box-shadow: 1px 2px 3px rgb(99, 51, 43);
+    -webkit-box-shadow: 1px 2px 3px rgb(99, 51, 43);
+    -moz-box-shadow: 1px 2px 3px rgb(99, 51, 43);
+}
+
+@media screen and (max-width:1175px)
+{
+	
+}
+
+
+
