@@ -13,43 +13,157 @@ body{
 
 /*CLASSES*/
 
-
-/*IDs*/
-#homeWrapper{
-    margin-top: 200px;
-    background-image: url('../Images/whiteBG.png');
-}
-
-#company-statement{
-    font-size: 42px;
-    font-weight: bolder;
-}
-
-#company-name-H1{
-    font-size: 82px;
-    font-weight: 500;
-}
-
-#what-we-do-anchor{
+.home-anchor{
     padding: 10px;
     text-transform: uppercase;
     background-color: rgb(153, 78, 65);
     color: white;
     text-decoration: none;
     transition: 1s;
-    font-size: 28px;
+    font-size: 24px;
     border-radius: 3px;
 }
 
-#what-we-do-anchor:hover{
+.home-anchor:hover{
     box-shadow: 1px 2px 3px rgb(99, 51, 43);
     -webkit-box-shadow: 1px 2px 3px rgb(99, 51, 43);
     -moz-box-shadow: 1px 2px 3px rgb(99, 51, 43);
+    text-decoration: none;
+    color: white;
 }
 
-@media screen and (max-width:1175px)
+/*IDs*/
+
+#homeWrapper{
+    margin-top: 160px;
+    background-image: url('../Images/whiteBackground.png');
+    padding: 20px;
+}
+
+#company-logo{
+    height: 60px;
+    width: auto;
+    margin-left: 40px;
+}
+
+#menuUL{
+    vertical-align: center;
+}
+
+#company-statement{
+    font-size: 42px;
+}
+
+#company-name-H1{
+    font-size: 82px;
+}
+
+@media screen and (max-width:1199px)
 {
-	
+	#company-logo{
+        height: 60px;
+        width: auto;
+        margin-left: 20px;
+    }
+
+    #homeWrapper{
+        margin-top: 60px;
+    }
+}
+
+/*MEDIUM DEVICES*/
+@media screen and (max-width:993px)
+{
+	#company-logo{
+        height: 60px;
+    }
+
+    #homeWrapper{
+        margin-top: 60px;
+    }
+}
+
+/*SMALL DEVICES*/
+@media screen and (max-width:769px)
+{
+    #company-logo{
+        height: 40px;
+    }
+
+    #homeWrapper{
+        margin-top: 80px;
+    }
+
+    #company-name-H1{
+        font-size: 62px;
+    }
+
+	#company-statement{
+        font-size: 28px;
+    }
+    
+    
+}
+
+/*EXTRA-SMALL DEVICES*/
+@media screen and (max-width:577px)
+{
+    [class*="col-xs"]:not(:first-child){
+        margin-top: 20px;
+    }
+
+
+    #company-logo{
+        height: 50px;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    #homeWrapper{
+        margin-top: 40px;
+        background-image: url('../Images/whiteBackground.png');
+        padding: 7px;
+    }
+
+    #company-name-H1{
+        font-size: 62px;
+        font-weight: 500;
+    }
+
+	#company-statement{
+        font-size: 28px;
+        font-weight: bolder;
+    }
+}
+
+/*EXTRA-EXTRA-SMALL DEVICES*/
+@media screen and (max-width:390px)
+{
+    [class*="col-xs-6"]:not(:first-child){
+        margin-top: 20px;
+    }
+
+    #company-logo{
+        height: 50px;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    #homeWrapper{
+        margin-top: 30px;
+        background-image: url('../Images/whiteBackground.png');
+        padding: 0px;
+    }
+
+    #company-name-H1{
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+	#company-statement{
+        font-size: 18px;
+        font-weight: bolder;
+    }
 }
 
 
