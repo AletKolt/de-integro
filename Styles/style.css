@@ -10,9 +10,7 @@ body{
     color: rgb(99, 51, 43);
 }
 
-
 /*CLASSES*/
-
 .home-anchor{
     padding: 10px;
     text-transform: uppercase;
@@ -23,7 +21,6 @@ body{
     font-size: 24px;
     border-radius: 3px;
 }
-
 .home-anchor:hover{
     box-shadow: 1px 2px 3px rgb(99, 51, 43);
     -webkit-box-shadow: 1px 2px 3px rgb(99, 51, 43);
@@ -31,31 +28,74 @@ body{
     text-decoration: none;
     color: white;
 }
-
+.bold-font{
+    font-weight: bold;
+    font-size: larger;
+}
 /*IDs*/
+#contactBody{
+    background-image: url('../Images/house_construction_contact.jpg');
+    background-color: black;
+    height: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(99, 51, 43);
+    }
 
 #homeWrapper{
     margin-top: 160px;
     background-image: url('../Images/whiteBackground.png');
     padding: 20px;
 }
-
 #company-logo{
     height: 60px;
     width: auto;
     margin-left: 40px;
 }
-
-#menuUL{
-    vertical-align: center;
-}
-
 #company-statement{
     font-size: 42px;
 }
-
 #company-name-H1{
     font-size: 82px;
+}
+
+#contactWrapper{
+    background-image: url('../Images/whiteBackground.png');
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#contactHR{
+    border: 1px solid rgb(99, 51, 43);
+    width: 50%;
+}
+
+#contactWrapper h2{
+    font-size: 52px;
+}
+
+#contactWrapper h3{
+    font-size: 32px;
+}
+
+#mail_icon{
+    height: 40px;
+    width: auto;
+}
+
+#phone_icon{
+    height: 70px;
+    width: auto;
+}
+
+#mail-row{
+    margin-top: 60px;
+}
+
+#phone-row{
+    margin-top: 10px;
 }
 
 @media screen and (max-width:1199px)
@@ -70,7 +110,6 @@ body{
         margin-top: 60px;
     }
 }
-
 /*MEDIUM DEVICES*/
 @media screen and (max-width:993px)
 {
@@ -81,8 +120,19 @@ body{
     #homeWrapper{
         margin-top: 60px;
     }
+    #contactWrapper{
+        padding: 10px;
+        margin-top: 0px;
+    }
+    #contactWrapper h2{
+        font-size: 52px;
+    }
+    
+    #contactWrapper h3{
+        font-size: 32px;
+    }
+    
 }
-
 /*SMALL DEVICES*/
 @media screen and (max-width:769px)
 {
@@ -104,14 +154,12 @@ body{
     
     
 }
-
 /*EXTRA-SMALL DEVICES*/
 @media screen and (max-width:577px)
 {
     [class*="col-xs"]:not(:first-child){
         margin-top: 20px;
     }
-
 
     #company-logo{
         height: 50px;
@@ -125,6 +173,12 @@ body{
         padding: 7px;
     }
 
+    #contactWrapper{
+        background-image: url('../Images/whiteBackground.png');
+        padding: 5px;
+        margin-top: 40px;
+    }
+
     #company-name-H1{
         font-size: 62px;
         font-weight: 500;
@@ -135,7 +189,6 @@ body{
         font-weight: bolder;
     }
 }
-
 /*EXTRA-EXTRA-SMALL DEVICES*/
 @media screen and (max-width:390px)
 {
@@ -163,6 +216,18 @@ body{
 	#company-statement{
         font-size: 18px;
         font-weight: bolder;
+    }
+
+    #contactWrapper{
+        padding: 10px;
+        margin-top: 0px;
+    }
+    #contactWrapper h2{
+        font-size: 42px;
+    }
+    
+    #contactWrapper h3{
+        font-size: 22px;
     }
 }
 
