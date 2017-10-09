@@ -17,9 +17,10 @@ body{
     background-color: hsl(9, 40%, 43%);
     color: white;
     text-decoration: none;
-    transition: 1s;
-    font-size: 24px;
+    transition: 0.5s;
+    font-size: 22px;
     border-radius: 3px;
+    border: 0px;
 }
 .home-anchor:hover{
     box-shadow: 1px 2px 3px rgb(99, 51, 43);
@@ -31,6 +32,21 @@ body{
 .bold-font{
     font-weight: bold;
     font-size: larger;
+}
+.services-icons{
+    height: 80px;
+    width: auto;
+    background-color: white;
+    border-radius: 50%;
+    padding: 7px;
+}
+.contact-icons{
+    background-color: white;
+    border-radius: 30%;
+    padding: 7px;
+}
+.servicesHR{
+    border-bottom: 2px dotted rgb(99, 51, 43);
 }
 /*IDs*/
 #contactBody{
@@ -45,7 +61,7 @@ body{
     }
 
 #homeWrapper{
-    margin-top: 160px;
+    margin-top: 80px;
     background-image: url('../Images/whiteBG3.png');
     padding: 20px;
 }
@@ -174,7 +190,7 @@ body{
 @media screen and (max-width:577px)
 {
     [class*="col-xs"]:not(:first-child){
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     #company-logo{
@@ -205,13 +221,18 @@ body{
         font-weight: bolder;
     }
     #mail_icon{
-        height: 30px;
+        height: 40px;
         width: auto;
     }
     #phone_icon{
-        height: 30px;
+        height: 40px;
         width: auto;
     }
+    .services-icons{
+        height: 80px;
+        width: auto;
+    }
+    
 }
 /*EXTRA-EXTRA-SMALL DEVICES*/
 @media screen and (max-width:390px)
