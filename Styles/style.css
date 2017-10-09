@@ -46,13 +46,13 @@ body{
 
 #homeWrapper{
     margin-top: 160px;
-    background-image: url('../Images/whiteBG.png');
+    background-image: url('../Images/whiteBG3.png');
     padding: 20px;
 }
 #company-logo{
     height: 60px;
     width: auto;
-    margin-left: 40px;
+    margin-left: 40%;
 }
 #company-statement{
     font-size: 42px;
@@ -62,7 +62,7 @@ body{
 }
 
 #contactWrapper{
-    background-image: url('../Images/whiteBG.png');
+    background-image: url('../Images/whiteBG3.png');
     padding: 20px;
     margin-top: 30px;
 }
@@ -103,7 +103,7 @@ body{
 	#company-logo{
         height: 60px;
         width: auto;
-        margin-left: 20px;
+        margin-left: 40%;
     }
 
     #homeWrapper{
@@ -115,6 +115,7 @@ body{
 {
 	#company-logo{
         height: 60px;
+        margin-left: 40%;
     }
 
     #homeWrapper{
@@ -136,8 +137,13 @@ body{
 /*SMALL DEVICES*/
 @media screen and (max-width:769px)
 {
+    [class*="col-sm"]:not(:first-child){
+        margin-top: 20px;
+    }
+
     #company-logo{
         height: 40px;
+        margin-left: 40%;
     }
 
     #homeWrapper{
@@ -164,17 +170,17 @@ body{
     #company-logo{
         height: 50px;
         width: auto;
-        margin-left: 0px;
+        margin-left: 40%;
     }
 
     #homeWrapper{
         margin-top: 40px;
-        background-image: url('../Images/whiteBackground.png');
+        background-image: url('../Images/whiteBG3.png');
         padding: 7px;
     }
 
     #contactWrapper{
-        background-image: url('../Images/whiteBackground.png');
+        background-image: url('../Images/whiteBG3.png');
         padding: 5px;
         margin-top: 40px;
     }
@@ -188,6 +194,14 @@ body{
         font-size: 28px;
         font-weight: bolder;
     }
+    #mail_icon{
+        height: 30px;
+        width: auto;
+    }
+    #phone_icon{
+        height: 30px;
+        width: auto;
+    }
 }
 /*EXTRA-EXTRA-SMALL DEVICES*/
 @media screen and (max-width:390px)
@@ -199,12 +213,12 @@ body{
     #company-logo{
         height: 50px;
         width: auto;
-        margin-left: 0px;
+        margin-left: 35%;
     }
 
     #homeWrapper{
         margin-top: 30px;
-        background-image: url('../Images/whiteBackground.png');
+        background-image: url('../Images/whiteBG3.png');
         padding: 0px;
     }
 
