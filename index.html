@@ -1,59 +1,181 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-    <!--<link rel="stylesheet" type="text/css" href="Styles/bootstrap.min.css" />-->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+    <link rel="icon" href="Images/deintegro_logo.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="Styles/bootstrap.min.css" />
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">-->
     <link rel="stylesheet" type="text/css" href="Styles/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
     <title>Home|De-Integro Services</title>
-    <!-- come here, let us see what you got there -->
 </head>
-
 <body>
-    <div class="container" id="homeWrapper">
-        <div class=row>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"></div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+    <div class="container-fluid" id="homeWrapper">
+        <div class="row">
+                <div class="col-lg-2 col-md-2"></div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5">
                 <a id="logoLink" href="javascript:void">
-                <img src="Images/deintegro_logo.png" alt="company_logo" id="company-logo" />
+                    <img src="Images/deintegro_logo.png" alt="company_logo" id="company-logo" />
                 </a>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"></div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                <h1 id="company-name-H1">De-Integro Services</h1>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right">
+                <a id="logoLink" href="javascript:void">
+                    <img src="Images/hamburger-button.png" alt="hamburger-button" id="hamburger-icon" />
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-2"></div>
         </div>
-        <!--home starts -->
-        <div id="index-div">
-            <div class="row text-center">
+
+        <div class="row container-fluid" id="mobileMenuDiv">
+            <div class="col-lg-4 col-md-4 col-sm-2 col-xs-1"></div>
+            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-10"></div>
+            <div class="col-lg-4 col-md-4 col-sm-2 col-xs-1 text-center">
+                <ul>
+                    <li class="mobileMenuDivLI"><a href="" class="mobileMenuDivLink">home</a></li>
+                    <li class="mobileMenuDivLI"><a href="" class="mobileMenuDivLink">our services</a></li>
+                    <li class="mobileMenuDivLI"><a href="" class="mobileMenuDivLink">contact us</a></li>
+                </ul>
+            </div>
+        </div>
+<!--home starts -->
+            <!-- carousel starts -->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div id="slider" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#slider" data-slide-to="1"></li>
+                                <li data-target="#slider" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="Images/image1.jpg" alt="image one"/>
+                                </div>
+                                <div class="item">
+                                    <img src="Images/image2.jpg" alt="image two"/>
+                                </div>
+                                <div class="item">
+                                        <img src="Images/image3.jpg" alt="image three"/>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#slider" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                            <a class="right carousel-control" href="#slider" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            <!-- carousel ends -->
+
+
+            <div class="row text-center" id="company-name-statement-div">
                 <div class="col-lg-2 col-md-2 col-sm-1"></div>
                 <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
-                    <h1 id="company-name-H1">De-Integro Services</h1>
+                    <h1>We are De-Integro</h1>
+                    <h2>you want satisfaction? we give it to you</h2>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-1"></div>
             </div>
+        </div>
+<!--home ends -->
 
-            <div class="row text-center" id="company-statement">
-                <div class="col-lg-3 col-md-2 col-sm-1"></div>
-                <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
-                    <h2>you want satisfaction? </h2>
-                    <h2>we give it to you</h2>
+
+<!-- services starts -->
+        <div id="services-div" class="container-fluid">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h2>OUR SERVICES</h2>
+                    <h3>...to give you satisfaction</h3>
+                    <hr id="contactHR" />
                 </div>
-                <div class="col-lg-3 col-md-2 col-sm-1"></div>
             </div>
-            <br/>
-            <div class="row">
-                <div class="col-lg-3 col-md-1"></div>
-                <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12 text-center">
-                    <button type="button" class="home-anchor" id="servicesButton">our services</button>
+
+            <div class="row" style="margin-top: 30px">
+                <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2"></div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4">
+                            <img src="Images/construction.png" alt="construction-icon" class="services-icons img-circle center-block" />
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12 text-center">
-                    <button type="button" class="home-anchor" id="contactButton">contact us</button>
+                <div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">
+                    <h3 class="text-center">CONSTRUCTION SERVICES</h3>
+                    <h6 class="text-center">We build with the best and quality materials that will make your building strong and durable</h6>
+                    <hr class="servicesHR" />
                 </div>
-                <div class="col-lg-3 col-md-1"></div>
+                <div class="col-lg-3  col-md-3 col-sm-2 col-xs-1"></div>
+            </div>
+            <div class="row" style="margin-top: 30px">
+                <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2"></div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4 img-center">
+                            <img src="Images/delivery.png" alt="supply-icon" class="services-icons img-circle center-block" />
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-4 col-sm-5 col-xs-6">
+                    <h3 class="text-center">SUPPLY OF BUILDING MATERIALS</h3>
+                    <h6 class="text-center">We deliver the materials you need for your construction promptly and definitely to your satisfaction</h6>
+                    <hr class="servicesHR" />
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-2 col-xs-1"></div>
+            </div>
+            <div class="row" style="margin-top: 30px">
+                <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2"></div>
+                <div class="col-lg-2  col-md-2 col-sm-3 col-xs-3">
+                    <div class="row  text-center">
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4 img-center">
+                            <img src="Images/contractor.png" alt="constactor-icon" class="services-icons img-circle center-block" />
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4  col-md-4 col-sm-5 col-xs-6">
+                    <h3 class="text-center">CONTRACTOR</h3>
+                    <h6 class="text-center">We accept contracts and propose building contracts</h6>
+                    <hr class="servicesHR" />
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-2 col-xs-1"></div>
+            </div>
+            <div class="row" style="margin-top: 30px">
+                <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2"></div>
+                <div class="col-lg-2  col-md-2 col-sm-3 col-xs-3">
+                    <div class="row  text-center">
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4 img-center">
+                            <img src="Images/merchandise.png" alt="merchandise-icon" class="services-icons img-circle center-block" />
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-4 col-sm-5 col-xs-6">
+                    <h3 class="text-center">GENERAL MERCHANDISE</h3>
+                    <h6 class="text-center">We see to it that you have the building materials you need when and where you need it, we need you the same way you need us</h6>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-2 col-xs-1"></div>
             </div>
         </div>
-        <!--home ends -->
-        <!--contact starts -->
+        <hr class="servicesHR" />
+<!-- services ends -->
+
+<!--contact starts -->
         <div id="contact-div">
             <div class="row text-center">
                 <div class="col-lg-12">
@@ -65,7 +187,7 @@
 
             <div class="row text-center" id="mail-row">
                 <div class="col-lg-12">
-                    <img src="Images/mail.png" alt="mail logo" id="mail_icon" class="contact-icons"/>
+                    <img src="Images/mail.png" alt="mail logo" id="mail_icon" class="contact-icons" />
                 </div>
             </div>
             <div class="row text-center">
@@ -78,7 +200,7 @@
 
             <div class="row text-center" id="phone-row">
                 <div class="col-lg-12">
-                    <img src="Images/smartphone.png" alt="phone logo" id="phone_icon" class="contact-icons"/>
+                    <img src="Images/phone.png" alt="phone logo" id="phone_icon" class="contact-icons" />
                 </div>
             </div>
             <div class="row text-center">
@@ -87,106 +209,21 @@
                 </div>
             </div>
         </div>
-        <!-- contact ends -->
+<!-- contact ends -->
 
-        <!-- services starts -->
-        <div id="services-div">
-            <div class="row text-center">
-                <div class="col-lg-12">
-                    <h2>WHAT WE DO</h2>
-                    <h3>...to give you satisfaction</h3>
-                    <hr id="contactHR" />
-                </div>
-            </div>
-
-            <div class="row" style="margin-top: 30px">
-                <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2"></div>
-                <div class="col-lg-2  col-md-2 col-sm-3 col-xs-3">
-                    <div class="row text-center">
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4">
-                            <img src="Images/construction.png" alt="construction-icon" class="services-icons img-circle center-block" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4  col-md-4 col-sm-5 col-xs-6">
-                    <h3 class="text-center">CONSTRUCTION SERVICES</h3>
-                    <h6 class="text-center">We build with the best and quality materials that will make your building strong and durable</h6>
-                    <hr class="servicesHR"/>
-                </div>
-                <div class="col-lg-3  col-md-3 col-sm-2 col-xs-1"></div>
-            </div>
-
-            <div class="row" style="margin-top: 30px">
-                <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2"></div>
-                <div class="col-lg-2  col-md-2 col-sm-3 col-xs-3">
-                    <div class="row  text-center">
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4 img-center">
-                            <img src="Images/delivery.png" alt="supply-icon" class="services-icons img-responsive center-block" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4  col-md-4 col-sm-5 col-xs-6">
-                    <h3 class="text-center">SUPPLY OF BUILDING MATERIALS</h3>
-                    <h6 class="text-center">We deliver the materials you need for your construction promptly and definitely to your satisfaction</h6>
-                    <hr class="servicesHR"/>
-                </div>
-                <div class="col-lg-3  col-md-3 col-sm-2 col-xs-1"></div>
-            </div>
-
-            <div class="row" style="margin-top: 30px">
-                <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2"></div>
-                <div class="col-lg-2  col-md-2 col-sm-3 col-xs-3">
-                    <div class="row  text-center">
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4 img-center">
-                            <img src="Images/contractor.png" alt="constactor-icon" class="services-icons img-responsive center-block" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4  col-md-4 col-sm-5 col-xs-6">
-                    <h3 class="text-center">CONTRACTOR</h3>
-                    <h6 class="text-center">We accept contracts and propose building contracts</h6>
-                    <hr class="servicesHR"/>
-                </div>
-                <div class="col-lg-3  col-md-3 col-sm-2 col-xs-1"></div>
-            </div>
-
-            <div class="row" style="margin-top: 30px">
-                <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2"></div>
-                <div class="col-lg-2  col-md-2 col-sm-3 col-xs-3">
-                    <div class="row  text-center">
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4 img-center">
-                            <img src="Images/merchandise.png" alt="merchandise-icon" class="services-icons img-responsive center-block" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
-                    </div>
-
-                </div>
-                <div class="col-lg-4  col-md-4 col-sm-5 col-xs-6">
-                    <h3 class="text-center">GENERAL MERCHANDISE</h3>
-                    <h6 class="text-center">We see to it that you have the building materials you need when and where you need it, we need you the same way you need us</h6>
-                    <hr class="servicesHR"/>
-                </div>
-                <div class="col-lg-3  col-md-3 col-sm-2 col-xs-1"></div>
-            </div>
-
-
+<div class="row container-fluid" id="footer">
+        <div class="col-lg-4 col-md-4 col-sm-2 col-xs-1"></div>
+        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-10 text-center">
+            <p>Copyright<span class="glyphicon glyphicon-copyright-mark"></span> 2017 De-Integro Services</p>
         </div>
-        <!-- services ends -->
+        <div class="col-lg-4 col-md-4 col-sm-2 col-xs-1"></div>
+    </div>
 
     </div>
     <!-- JQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!--<script type="text/javascript" src="Scripts/jquery-1.11.0.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>-->
+    <script type="text/javascript" src="Scripts/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="Scripts/JScript.js"></script>
 </body>
 

@@ -1,8 +1,6 @@
 var servicesButton = $("#servicesButton");
 var contactButton = $("#contactButton");
-var indexDiv = $("#index-div");
-var contactDiv = $("#contact-div");
-var servicesDiv = $("#services-div");
+var hamburgerButton = $("#hamburger-icon");
 var logoAnchor = $("#logoLink");
 
 $(document).ready(function(){
@@ -16,6 +14,10 @@ $(document).ready(function(){
 
     logoAnchor.click(function(){
         showDiv("index-div");
+    });
+
+    hamburgerButton.click(function(){
+        $("#mobileMenuDiv").slideToggle(200);
     });
 });
 

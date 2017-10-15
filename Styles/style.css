@@ -1,15 +1,7 @@
 /*ELEMENTS*/
 body{
-    background-image: url('../Images/bg_image.jpg');
-    background-color: black;
-    height: 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
     color: rgb(99, 51, 43);
 }
-
 /*CLASSES*/
 .home-anchor{
     padding: 7px;
@@ -48,82 +40,80 @@ body{
 .servicesHR{
     border-bottom: 2px dotted rgb(99, 51, 43);
 }
+.mobileMenuDivLI{
+    text-transform: uppercase;
+    padding: 4px;
+    list-style: none;
+}
+.mobileMenuDivLI a:visited,a:link{
+    text-decoration: none;
+    color: white;
+}
+.mobileMenuDivLI a:hover{
+    margin-right: 10px;
+}
 /*IDs*/
-#contactBody{
-    background-image: url('../Images/house_construction_contact.jpg');
-    background-color: black;
-    height: 100%;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: rgb(99, 51, 43);
-    }
-
 #homeWrapper{
-    margin-top: 80px;
-    background-image: url('../Images/whiteBG3.png');
+    background-color: white;
     padding: 20px;
 }
 #company-logo{
     height: 60px;
     width: auto;
-    margin-left: 40%;
+    margin-left: 50%;
 }
-#company-statement{
-    font-size: 42px;
+#hamburger-icon{
+    height: 40px;
+    width: auto;
+    margin-right: 60%;
 }
-#company-name-H1{
-    font-size: 82px;
+#mobileMenuDiv{
+    background-color: rgb(99, 51, 43);
+    color: white;
+    padding: 15px;
+    display: none;
+    margin: 0 auto;
 }
-
+#company-name-statement-div{
+    padding: 50px;
+    background-color: rgb(99, 51, 43);
+    color: white;
+    margin-bottom: 30px;
+}
 #contactWrapper{
     background-image: url('../Images/whiteBG3.png');
     padding: 20px;
     margin-top: 30px;
 }
-
 #contactHR{
     border: 1px solid rgb(99, 51, 43);
     width: 50%;
 }
-
 #contactWrapper h2{
     font-size: 52px;
 }
-
 #contactWrapper h3{
     font-size: 32px;
 }
-
 #mail_icon{
     height: 40px;
     width: auto;
 }
-
 #phone_icon{
     height: 70px;
     width: auto;
 }
-
 #mail-row{
-    margin-top: 60px;
+    margin-top: 20px;
 }
-
 #phone-row{
     margin-top: 10px;
 }
-
-#contact-div{
-    display: none;
-    transition: 2s;
+#footer{
+    background-color: rgb(99, 51, 43);
+    color: white;
+    padding: 15px;
 }
-
-#services-div{
-    display: none;
-    transition: 2s;
-}
-
 @media screen and (max-width:1199px)
 {
 	#company-logo{
@@ -131,7 +121,6 @@ body{
         width: auto;
         margin-left: 40%;
     }
-
     #homeWrapper{
         margin-top: 60px;
     }
@@ -166,25 +155,19 @@ body{
     [class*="col-sm"]:not(:first-child){
         margin-top: 20px;
     }
-
     #company-logo{
         height: 40px;
         margin-left: 40%;
     }
-
     #homeWrapper{
         margin-top: 80px;
     }
-
     #company-name-H1{
         font-size: 62px;
     }
-
 	#company-statement{
         font-size: 28px;
     }
-    
-    
 }
 /*EXTRA-SMALL DEVICES*/
 @media screen and (max-width:577px)
@@ -192,30 +175,25 @@ body{
     [class*="col-xs"]:not(:first-child){
         margin-top: 15px;
     }
-
     #company-logo{
         height: 50px;
         width: auto;
         margin-left: 40%;
     }
-
     #homeWrapper{
         margin-top: 40px;
         background-image: url('../Images/whiteBG3.png');
         padding: 7px;
     }
-
     #contactWrapper{
         background-image: url('../Images/whiteBG3.png');
         padding: 5px;
         margin-top: 40px;
     }
-
     #company-name-H1{
         font-size: 62px;
         font-weight: 500;
     }
-
 	#company-statement{
         font-size: 28px;
         font-weight: bolder;
