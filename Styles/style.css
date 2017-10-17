@@ -37,6 +37,9 @@ body{
     border-radius: 30%;
     padding: 7px;
 }
+.servicesDiv{
+    margin-top: 30px;
+}
 .servicesHR{
     border-bottom: 2px dotted rgb(99, 51, 43);
 }
@@ -74,26 +77,21 @@ body{
     display: none;
     margin: 0 auto;
 }
+#company-name-H1{
+    margin-top: 4px;
+}
 #company-name-statement-div{
     padding: 50px;
-    background-color: rgb(99, 51, 43);
+    background-color: rgb(183, 102, 89);
     color: white;
     margin-bottom: 30px;
-}
-#contactWrapper{
-    background-image: url('../Images/whiteBG3.png');
-    padding: 20px;
-    margin-top: 30px;
 }
 #contactHR{
     border: 1px solid rgb(99, 51, 43);
     width: 50%;
 }
-#contactWrapper h2{
-    font-size: 52px;
-}
-#contactWrapper h3{
-    font-size: 32px;
+#slider{
+    width: 100%;
 }
 #mail_icon{
     height: 40px;
@@ -110,7 +108,7 @@ body{
     margin-top: 10px;
 }
 #footer{
-    background-color: rgb(99, 51, 43);
+    background-color: rgb(152, 78, 56);
     color: white;
     padding: 15px;
 }
@@ -121,82 +119,54 @@ body{
         width: auto;
         margin-left: 40%;
     }
-    #homeWrapper{
-        margin-top: 60px;
-    }
 }
 /*MEDIUM DEVICES*/
 @media screen and (max-width:993px)
 {
-	#company-logo{
-        height: 60px;
-        margin-left: 40%;
+    #company-name-H1{
+        margin-top: 4px;
+        font-size: 28px;
     }
-
-    #homeWrapper{
-        margin-top: 60px;
-    }
-    #contactWrapper{
-        padding: 10px;
-        margin-top: 0px;
-    }
-    #contactWrapper h2{
-        font-size: 52px;
-    }
-    
-    #contactWrapper h3{
-        font-size: 32px;
-    }
-    
 }
 /*SMALL DEVICES*/
 @media screen and (max-width:769px)
 {
     [class*="col-sm"]:not(:first-child){
-        margin-top: 20px;
-    }
-    #company-logo{
-        height: 40px;
-        margin-left: 40%;
-    }
-    #homeWrapper{
-        margin-top: 80px;
-    }
-    #company-name-H1{
-        font-size: 62px;
-    }
-	#company-statement{
-        font-size: 28px;
+        margin-top: 7px;
     }
 }
 /*EXTRA-SMALL DEVICES*/
 @media screen and (max-width:577px)
 {
     [class*="col-xs"]:not(:first-child){
-        margin-top: 15px;
+        margin-top: 7px;
     }
     #company-logo{
-        height: 50px;
+        height: 40px;
         width: auto;
-        margin-left: 40%;
     }
-    #homeWrapper{
-        margin-top: 40px;
-        background-image: url('../Images/whiteBG3.png');
-        padding: 7px;
-    }
-    #contactWrapper{
-        background-image: url('../Images/whiteBG3.png');
-        padding: 5px;
-        margin-top: 40px;
+    #hamburger-icon{
+        height: 40px;
+        width: auto;
     }
     #company-name-H1{
-        font-size: 62px;
-        font-weight: 500;
+        font-size: 22px;
+        margin-top: 4px;
     }
-	#company-statement{
+    #company-name-statement-div{
+        padding: 12px;
+    }
+    #company-name-statement-div h1{
         font-size: 28px;
-        font-weight: bolder;
+    }
+    #company-name-statement-div h2{
+        font-size: 20px;
+    }
+    #services-div h3{
+        font-size: 18px;
+    }
+    #contact-div h3{
+        font-size: 18px;
     }
     #mail_icon{
         height: 40px;
@@ -216,41 +186,11 @@ body{
 @media screen and (max-width:390px)
 {
     [class*="col-xs-6"]:not(:first-child){
-        margin-top: 20px;
-    }
-
-    #company-logo{
-        height: 50px;
-        width: auto;
-        margin-left: 35%;
-    }
-
-    #homeWrapper{
-        margin-top: 30px;
-        background-image: url('../Images/whiteBG3.png');
-        padding: 0px;
-    }
-
-    #company-name-H1{
-        font-size: 50px;
-        font-weight: 500;
-    }
-
-	#company-statement{
-        font-size: 18px;
-        font-weight: bolder;
-    }
-
-    #contactWrapper{
-        padding: 10px;
-        margin-top: 0px;
-    }
-    #contactWrapper h2{
-        font-size: 42px;
+        margin-top: 7px;
     }
     
-    #contactWrapper h3{
-        font-size: 22px;
+    #company-name-span{
+        display: none;
     }
 }
 
